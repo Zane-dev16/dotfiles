@@ -103,7 +103,6 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
-conda activate irellenv
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -142,6 +141,6 @@ unset __conda_setup
 export PATH="$HOME/local/bin:$PATH"
 export PATH="/data/Irell/nvim/nvim.appimage:$PATH"
 
-tmux a -t work || tmux new -s work
-
+conda activate irellenv
 eval "$(starship init bash)"
+
