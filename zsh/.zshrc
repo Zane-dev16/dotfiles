@@ -20,6 +20,10 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+alias cd='z'
+alias ..='z ..'
+alias ...='z ../..'
+
 # custom functions
 mkcd ()
 {
@@ -28,3 +32,5 @@ mkcd ()
 }
 
 eval "$(starship init zsh)"
+eval "$(fzf --zsh)"
+eval "$(zoxide init zsh)"
