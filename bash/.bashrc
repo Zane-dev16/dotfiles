@@ -103,6 +103,10 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+alias cd='z'
+alias ..='z ..'
+alias ...='z ../..'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -143,4 +147,6 @@ export PATH="/data/Irell/nvim/nvim.appimage:$PATH"
 
 conda activate irellenv
 eval "$(starship init bash)"
+eval "$(fzf --bash)"
+eval "$(zoxide init bash)"
 
