@@ -103,9 +103,18 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+alias lg='lazygit'
+
 alias cd='z'
 alias ..='z ..'
 alias ...='z ../..'
+
+alias ebash='nvim ~/.bashrc'
+alias sbash='source ~/.bashrc'
+alias evim='nvim ~/dotfiles/.config/nvim/'
+alias ezsh='nvim ~/.zshrc'
+alias szsh='source ~/.zshrc'
+alias wnvd='watch -n 1 nvidia-smi'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
