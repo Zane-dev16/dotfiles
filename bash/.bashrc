@@ -111,7 +111,7 @@ alias ...='z ../..'
 
 alias ebash='nvim ~/.bashrc'
 alias sbash='source ~/.bashrc'
-alias evim='nvim ~/dotfiles/.config/nvim/'
+alias evim='nvim ~/.config/nvim/'
 alias ezsh='nvim ~/.zshrc'
 alias szsh='source ~/.zshrc'
 alias wnvd='watch -n 1 nvidia-smi'
@@ -153,6 +153,10 @@ unset __conda_setup
 
 export PATH="$HOME/local/bin:$PATH"
 export PATH="/data/Irell/nvim/nvim.appimage:$PATH"
+
+if [ -f ~/.bashrc.azure ]; then
+    . ~/.bashrc.azure
+fi
 
 conda activate irellenv
 eval "$(starship init bash)"
