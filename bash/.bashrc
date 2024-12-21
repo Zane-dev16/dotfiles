@@ -153,6 +153,9 @@ unset __conda_setup
 
 export PATH="$HOME/local/bin:$PATH"
 export PATH="/data/Irell/nvim/nvim.appimage:$PATH"
+export EDITOR='nvim'
+export VISUAL='nvim'
+set -o vi
 
 if [ -f ~/.bashrc.azure ]; then
     . ~/.bashrc.azure
@@ -162,4 +165,4 @@ conda activate irellenv
 eval "$(starship init bash)"
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
-
+eval $(thefuck --alias)
