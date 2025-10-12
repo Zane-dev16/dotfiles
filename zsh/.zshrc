@@ -37,3 +37,12 @@ mkcd ()
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/opt/homebrew/bin:$PATH"
+export CXX="/opt/homebrew/bin/g++-14"
+export CC="/opt/homebrew/bin/gcc-14"
+export PATH="/opt/homebrew/opt/flex/bin:$PATH"
